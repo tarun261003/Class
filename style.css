@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .classes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  
+  .class {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .time,
+  .name,
+  .title,
+  .location,
+  .availability,
+  .attending {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+  }
+  
+  .time {
+    font-weight: bold;
+  }
+  
+  .name {
+    font-size: 1.5em;
+  }
+  
+  .title {
+    font-size: 1.2em;
+  }
+  
+  .location {
+    color: #666;
+  }
+  
+  .availability {
+    color: #666;
+  }
+  
+  .attending {
+    justify-content: flex-end;
+  }
+  
+  .attending button {
+    margin-right: 0.5em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  a:hover {
+    color: #666;
+  }
+.green-circle {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%; /* This creates the circular shape */
+    margin-right:10px ;
+}
+.orange-circle {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%; /* This creates the circular shape */
+    margin-right:10px ;
+}
+.class{
+    background-color:lightblue;
+    border-left: 2px solid blue;
+}
+.class1{
+    background-color:lightcyan;
+    border-left: 2px solid blue;
+}
+.time,class2{
+    display: inline-block;
+}
+#cal{
+    float: right;
+    color: red;
+    text-decoration: underline;
+}
+.container{
+    text-align: center;
+    padding: 5%;
+}
+.stream{
+    padding-left: 20px;
+    border-left:2px solid red;
+    float: right;
+}
