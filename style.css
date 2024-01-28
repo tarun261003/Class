@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+  .t1{
+    text-decoration: underline;
+  }
   h1 {
     font-size: 2em;
     margin-bottom: 1em;
@@ -54,13 +56,31 @@ body {
     color: #666;
   }
   
-  .attending {
-    justify-content: flex-end;
+    .attending {
+      display: flex;
+      align-items: center;
+    }
+    
+    .attending label {
+      margin-right: 10px; 
+    }
+    
+    .attending #buttons {
+      flex: 1;
+      display: flex;
+      
+    }
+    .date{
+      display: flex;
+      margin-left: 50%;
+      margin-bottom: 0;
   }
-  
-  .attending button {
-    margin-right: 0.5em;
-  }
+    .attending .dif button {
+      margin: 0 5px; 
+      justify-content: space-between;
+      background-color: white;
+      color:skyblue
+    }
   
   a {
     text-decoration: none;
@@ -74,23 +94,25 @@ body {
     width: 20px;
     height: 20px;
     background-color: green;
-    border-radius: 50%; /* This creates the circular shape */
-    margin-right:10px ;
+    border-radius: 50%;
+    margin-right: 2%; 
 }
 .orange-circle {
     width: 20px;
     height: 20px;
     background-color: orange;
-    border-radius: 50%; /* This creates the circular shape */
-    margin-right:10px ;
+    border-radius: 50%;
+    margin-right: 2%; 
 }
 .class{
     background-color:lightblue;
-    border-left: 2px solid blue;
+    border-left: 5px solid blue;
+    padding-left: 20px;
 }
 .class1{
     background-color:lightcyan;
-    border-left: 2px solid blue;
+    border-left: 5px solid blue;
+    padding-left: 20px;
 }
 .time,class2{
     display: inline-block;
@@ -101,11 +123,28 @@ body {
     text-decoration: underline;
 }
 .container{
-    text-align: center;
     padding: 5%;
+    margin-top: 0px;
 }
 .stream{
     padding-left: 20px;
     border-left:2px solid red;
-    float: right;
+    margin-left: 90%;
+    text-align: center;
+    max-width: 100px;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header h1,
+.header .stream {
+  margin: 0; /* Adjust margin as needed */
+}
+#l1{
+  margin-left: 80%;
+}
+.class2{
+  margin-left: 50%;
 }
